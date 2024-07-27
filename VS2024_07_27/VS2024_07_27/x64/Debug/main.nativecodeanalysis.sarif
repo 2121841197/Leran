@@ -1,0 +1,73 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "返回值被忽略: “scanf”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///I:/kongbai/Leran/VS2024_07_27/VS2024_07_27/main.c"
+                },
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 3,
+                  "endLine": 42,
+                  "endColumn": 16
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "test",
+                  "decoratedName": "test",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33812.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///I:/kongbai/Leran/VS2024_07_27/VS2024_07_27/main.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "4032f98417b6640041c928aad910569670735e01a11cebed7620704458964157"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///i:/kongbai/leran/vs2024_07_27/vs2024_07_27/game.h"
+          },
+          "hashes": {
+            "sha-256": "961033f5a4e0be494823b63891e021a5682d13e7ff40d5f40c1d29622660f58b"
+          }
+        }
+      ]
+    }
+  ]
+}
