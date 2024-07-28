@@ -10,7 +10,7 @@
 #include "stm32_flash.h"
 
 u8 temp_buf[3],humi_buf[3];
-
+u8 data_str[] = "117.363525,39.018852,03:32:16,2024-07-28,11:32:16,2024-07-28,0.00,68.18,41.00";
 
 void data_pros()	//数据处理函数
 {
@@ -31,6 +31,10 @@ void data_pros()	//数据处理函数
 int main()
 {
 	u8 i=0;
+	char *token;  
+  char *search = ",";
+	char *array[9]; 
+	
 	SysTick_Init(72);
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);  //中断优先级分组 分2组
 	LED_Init();
@@ -70,12 +74,6 @@ int main()
 
 	
 	FRONT_COLOR=RED;
-	LCD_ShowString(155, 155, tftlcd_data.width, tftlcd_data.height, 24, "88:88:88");
-	LCD_ShowString(155, 185, tftlcd_data.width, tftlcd_data.height, 24, "8888-88-88");
-	LCD_ShowString(95, 215, tftlcd_data.width, tftlcd_data.height, 24, "0.0");
-	LCD_ShowString(95, 245, tftlcd_data.width, tftlcd_data.height, 24, "0.0");
-	LCD_ShowString(95, 275, tftlcd_data.width, tftlcd_data.height, 24, "0.0");
-	LCD_ShowString(95, 305, tftlcd_data.width, tftlcd_data.height, 24, "0.0");
 	delay_ms(10);
 
 	while(1)
@@ -95,11 +93,27 @@ int main()
 		}
 		delay_ms(25);
 		
-//		if(USART1_RX_STA&0x8000)
-//		{					   
-//				LCD_ShowString(250,250,tftlcd_data.width,tftlcd_data.height,24,USART1_RX_BUF);
-//		}
-		
+		if(USART1_RX_STA&0x8000)
+		{
+			// 使用strtok函数分割字符串  
+			token = strtok(USART1_RX_BUF, search);  
+			while (token != NULL) 
+			{  
+					array[i] = token;  
+					token = strtok(NULL, search);  
+					i++;  
+			}
+			LCD_ShowString(155, 155, tftlcd_data.width, tftlcd_data.height, 24, array[4]);
+			LCD_ShowString(155, 185, tftlcd_data.width, tftlcd_data.height, 24, array[5]);
+			LCD_ShowString(95, 215, tftlcd_data.width, tftlcd_data.height, 24, array[0]);
+			LCD_ShowString(95, 245, tftlcd_data.width, tftlcd_data.height, 24, array[1]);
+			LCD_ShowString(95, 275, tftlcd_data.width, tftlcd_data.height, 24, array[7]);
+			LCD_ShowString(95, 305, tftlcd_data.width, tftlcd_data.height, 24, array[6]);
+			USART1_RX_STA =0;
+	}
+			delay_ms(10);
+
+				
 		if(USART3_RX_BUF[5]==(uint8_t)(USART3_RX_BUF[0]+USART3_RX_BUF[1]+USART3_RX_BUF[2]+USART3_RX_BUF[3]+USART3_RX_BUF[4]))
 		{
 			LCD_ShowxNum(215,125,USART3_RX_BUF[1]*256+USART3_RX_BUF[2],3, 24, 0);
@@ -124,6 +138,7 @@ int main()
 			data_pros();  	 //读取一次DHT11数据最少要大于100ms
 		}
 		
-		delay_ms(10);		
+		delay_ms(10);	
+		 
 	}
 }

@@ -33,6 +33,7 @@
 .\obj\main.o: .\APP\led\led.h
 .\obj\main.o: .\Public\usart.h
 .\obj\main.o: D:\keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\main.o: D:\keil\ARM\ARMCC\Bin\..\include\string.h
 .\obj\main.o: .\APP\tftlcd\tftlcd.h
 .\obj\main.o: .\APP\dht11\dht11.h
 .\obj\main.o: .\APP\fire\fire.h

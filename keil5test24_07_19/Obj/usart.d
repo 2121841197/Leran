@@ -31,3 +31,4 @@
 .\obj\usart.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\obj\usart.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
 .\obj\usart.o: D:\keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\usart.o: D:\keil\ARM\ARMCC\Bin\..\include\string.h

@@ -1,5 +1,6 @@
 #include "usart.h"		 
 
+char* token;
 int fputc(int ch,FILE *p)  //函数默认的，在使用printf函数时自动调用
 {
 	USART_SendData(USART1,(u8)ch);	

@@ -34,4 +34,5 @@
 .\obj\tftlcd.o: APP\tftlcd\font.h
 .\obj\tftlcd.o: .\Public\usart.h
 .\obj\tftlcd.o: D:\keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\tftlcd.o: D:\keil\ARM\ARMCC\Bin\..\include\string.h
 .\obj\tftlcd.o: .\Public\SysTick.h

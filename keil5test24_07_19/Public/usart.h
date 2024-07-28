@@ -2,7 +2,8 @@
 #define _usart_H
 
 #include "system.h" 
-#include "stdio.h" 
+#include <stdio.h>
+#include <string.h>
 
 #define USART1_REC_LEN		200  	//定义最大接收字节数 200
 #define USART2_REC_LEN		200  	//定义最大接收字节数 200

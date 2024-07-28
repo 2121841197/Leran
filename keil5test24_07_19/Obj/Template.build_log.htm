@@ -21,13 +21,32 @@ Target DLL:      CMSIS_AGDI.dll V1.33.16.0
 Dialog DLL:      TCM.DLL V1.56.4.0
  
 <h2>Project:</h2>
-I:\kongbai\keil5test24_07_19\Template.uvprojx
+I:\kongbai\Leran\keil5test24_07_19\Template.uvprojx
 Project File Date:  07/24/2024
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\keil\ARM\ARMCC\Bin'
 Build target 'Target 1'
-".\Obj\Template.axf" - 0 Error(s), 0 Warning(s).
+compiling main.c...
+User\main.c(99): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  			token = strtok(USART1_RX_BUF, search);  
+User\main.c(106): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  			LCD_ShowString(155, 155, tftlcd_data.width, tftlcd_data.height, 24, array[4]);
+User\main.c(107): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  			LCD_ShowString(155, 185, tftlcd_data.width, tftlcd_data.height, 24, array[5]);
+User\main.c(108): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  			LCD_ShowString(95, 215, tftlcd_data.width, tftlcd_data.height, 24, array[0]);
+User\main.c(109): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  			LCD_ShowString(95, 245, tftlcd_data.width, tftlcd_data.height, 24, array[1]);
+User\main.c(110): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  			LCD_ShowString(95, 275, tftlcd_data.width, tftlcd_data.height, 24, array[7]);
+User\main.c(111): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  			LCD_ShowString(95, 305, tftlcd_data.width, tftlcd_data.height, 24, array[6]);
+User\main.c: 7 warnings, 0 errors
+linking...
+Program Size: Code=9188 RO-data=384336 RW-data=344 ZI-data=1624  
+FromELF: creating hex file...
+".\Obj\Template.axf" - 0 Error(s), 7 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -40,7 +59,7 @@ Package Vendor: Keil
   D:/keil/Keil/STM32F1xx_DFP/2.3.0/Device/Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:00
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>
