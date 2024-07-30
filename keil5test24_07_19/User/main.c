@@ -11,7 +11,7 @@
 
 u8 temp_buf[3],humi_buf[3];
 
-void data_pros()	//数据处理函数
+void data_pros(void)	//数据处理函数
 {
 	u8 temp;  	    
 	u8 humi;
@@ -27,7 +27,7 @@ void data_pros()	//数据处理函数
 	LCD_ShowString(95,95,tftlcd_data.width,tftlcd_data.height,24,humi_buf);
 }
 
-int main()
+int main(void)
 {
 	u8 i=0;
 	char *token;  
