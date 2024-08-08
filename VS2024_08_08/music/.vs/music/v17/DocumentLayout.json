@@ -3,8 +3,11 @@
   "WorkspaceRootPath": "I:\\kongbai\\Leran\\VS2024_08_08\\music\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5AA53678-1098-4B9E-A755-530A2D864AAA}|music\\music.vcxproj|I:\\kongbai\\Leran\\VS2024_08_08\\music\\music\\music.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{5AA53678-1098-4B9E-A755-530A2D864AAA}|music\\music.vcxproj|I:\\kongbai\\Leran\\vs2024_08_08\\music\\music\\music.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5AA53678-1098-4B9E-A755-530A2D864AAA}|music\\music.vcxproj|solutionrelative:music\\music.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\include\\mutex||{3B902123-F8A7-4915-9F01-361F908088D0}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +17,18 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "mutex",
+              "DocumentMoniker": "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\include\\mutex",
+              "ToolTip": "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\include\\mutex",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-08-08T02:41:40.7Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +37,7 @@
               "RelativeDocumentMoniker": "music\\music.cpp",
               "ToolTip": "I:\\kongbai\\Leran\\VS2024_08_08\\music\\music\\music.cpp",
               "RelativeToolTip": "music\\music.cpp",
-              "ViewState": "AQIAAJMAAAAAAAAAAAAAAAwAAAANAAAA",
+              "ViewState": "AQIAAJYAAAAAAAAAAAAAAKIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-08-08T01:19:43.909Z",
               "EditorCaption": ""
