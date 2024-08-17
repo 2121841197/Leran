@@ -30,6 +30,7 @@ void data_pros(void)	//数据处理函数
 int main(void)
 {
 	u8 i=0;
+	u8 k = 0;
 	char *token;  
   char *search = ",";
 	char *array[9]; 
@@ -109,6 +110,7 @@ int main(void)
 			LCD_ShowString(95, 275, tftlcd_data.width, tftlcd_data.height, 24, array[7]);
 			LCD_ShowString(95, 305, tftlcd_data.width, tftlcd_data.height, 24, array[6]);
 			USART1_RX_STA =0;
+			i = 0;
 	}
 			delay_ms(10);
 
@@ -130,8 +132,8 @@ int main(void)
 		USART2_UTF_8();
 		
 		
-		i++;
-		if(i%20==0)
+		k++;
+		if(k%20==0)
 		{
 			LED1=!LED1;
 			data_pros();  	 //读取一次DHT11数据最少要大于100ms
