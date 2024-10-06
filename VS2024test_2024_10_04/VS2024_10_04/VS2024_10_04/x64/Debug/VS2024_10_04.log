@@ -1,0 +1,4 @@
+﻿  Snake.c
+I:\code\kongbai\VS2024test_2024_10_04\VS2024_10_04\VS2024_10_04\Snake.c(414,11): warning C4566: 由通用字符名称“\u2F83”表示的字符不能在当前代码页(936)中表示出来
+I:\code\kongbai\VS2024test_2024_10_04\VS2024_10_04\VS2024_10_04\Snake.c(414,11): warning C4566: 由通用字符名称“\u2F30”表示的字符不能在当前代码页(936)中表示出来
+  VS2024_10_04.vcxproj -> I:\code\kongbai\VS2024test_2024_10_04\VS2024_10_04\x64\Debug\VS2024_10_04.exe

@@ -1,3 +1,2 @@
 ﻿  music.cpp
-I:\kongbai\Leran\vs2024_08_08\music\music\music.cpp(1037,31): warning C4244: “参数”: 从“double”转换到“DWORD”，可能丢失数据
   music.vcxproj -> I:\kongbai\Leran\vs2024_08_08\music\x64\Debug\music.exe
